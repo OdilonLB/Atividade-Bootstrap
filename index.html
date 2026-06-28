@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusGames — Portal de Jogos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand font-monospace fw-bold text-danger" href="#"> NEXUS <span class="text-white"> GAMES </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
+          <li class="nav-item"><a class="nav-link active text-white" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Guias</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-secondary text-light btn-sm px-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="bi bi-search me-1"></i>Buscar
+          </button>
+          <button class="btn btn-danger btn-sm px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#nlModal">
+            <i class="bi bi-envelope-fill me-1"></i>Newsletter
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="position-relative d-flex align-items-end pt-5 mt-5">
+    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202606/1818/4a35c9a8490c69fe89af0f52d4ac0249b230b4fdb12e8469.jpg" class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-0" alt="Background GTA 6">
+    <div class="position-absolute w-100 h-100 bg-dark opacity-75 top-0 start-0 z-1"></div>
+    
+    <div class="container position-relative z-2 py-5 my-5">
+      <span class="badge bg-info text-dark mb-2 font-monospace text-uppercase">Destaque</span>
+      <div class="small mb-2 text-light">
+        <span class="me-3"><i class="bi bi-controller me-1"></i>Mundo Aberto</span>
+        <span><i class="bi bi-calendar3 me-1"></i>25 Jun 2026</span>
+      </div>
+      <h1 class="display-4 fw-bold font-monospace text-danger mb-3">
+        GTA 6<br><span class="text-white">O jogo mais aguardado do mundo</span>
+      </h1>
+      <p class="lead text-light w-75">
+        GTA 6 (Grand Theft Auto VI). A sequência da franquia da Rockstar Games gera um fenômeno global de expectativa, com lançamento oficial confirmado para o final do ano e pré-vendas em andamento.
+      </p>
+      <a href="#" class="btn btn-danger btn-lg mt-2 fw-bold text-dark">
+        <i class="bi bi-play-fill me-1"></i>Ler mais
+      </a>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <div class="d-flex align-items-center mb-4">
+          <h2 class="h5 font-monospace text-uppercase text-danger m-0 fw-bold">
+            <i class="bi bi-lightning-fill me-2"></i>Últimas Notícias
+          </h2>
+          <hr class="flex-grow-1 ms-3 border-secondary opacity-50">
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://i.ytimg.com/vi/IpSDW3Mq-7E/maxresdefault.jpg" class="card-img-top object-fit-cover" alt="GTA 6" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=GTA+6'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Ação · Mundo Aberto</span>
+                <h5 class="card-title h6 font-monospace fw-bold">GTA 6: Rockstar Revela Novo Trailer Detalhando Vice City</h5>
+                <p class="card-text small flex-grow-1 text-secondary">Ataques a bancos dinâmicos, inteligência artificial aprimorada dos NPCs e o mapa mais denso e interativo já criado.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>26 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://cms-assets.xboxservices.com/assets/3e/29/3e294a2c-66ef-4ba5-90fb-53dda66b88ea.jpg?n=0399951111277_GLP-Page-Hero-1084_1920x1080_02.jpg" class="card-img-top object-fit-cover" alt="Forza Horizon 6" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Forza+Horizon+6'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Corrida · Mundo Aberto</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Forza Horizon 6 — Japão Confirmado como Cenário</h5>
+                <p class="card-text small flex-grow-1 text-secondary">A franquia de corrida chega ao Japão com um mapa focado nas belezas de Tóquio e do Monte Fuji, prometendo a experiência mais imersiva da série.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>24 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3469450/706ca083d5768e3a6d01765b2c8974c10b1d771e/capsule_616x353.jpg?t=1780927906" class="card-img-top object-fit-cover" alt="DOOM The Dark Ages" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=DOOM+Revelations'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">FPS · Ação</span>
+                <h5 class="card-title h6 font-monospace fw-bold">DOOM The Dark Ages: Revelations</h5>
+                <p class="card-text small flex-grow-1 text-secondary">A maior expansão já criada pela id Software chega em 7 de julho de 2026 com nova campanha, novos demônios e a mortífera Motolança.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>22 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1781901582" class="card-img-top object-fit-cover" alt="Gears of War E-Day" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Gears+of+War+E-Day'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Ação · Terror</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Gears of War: E-Day</h5>
+                <p class="card-text small flex-grow-1 text-secondary">O novo jogo da Microsoft vai explorar o Emergence Day e o início da guerra contra os Locust.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>22 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://static.wikia.nocookie.net/cyberpunk/images/e/e0/Cyberpunk2077-keyart-female_v.png/revision/latest?cb=20201201001215" class="card-img-top object-fit-cover" alt="Cyberpunk Orion" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Cyberpunk+Orion'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Ficção Científica · RPG</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Próximo Cyberpunk Entra em Produção Total</h5>
+                <p class="card-text small flex-grow-1 text-secondary">A CD Projekt Red confirmou o fim da pré-produção do codinome Orion. O jogo está sendo construído na Unreal Engine 5.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>22 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://nerdizmo.ig.com.br/wp-content/uploads/2024/06/Hollow-Knight-Silksong.jpg" class="card-img-top object-fit-cover" alt="Silksong" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Silksong'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Indie · Metroidvania</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Hollow Knight: Silksong</h5>
+                <p class="card-text small flex-grow-1 text-secondary">Lançado em setembro de 2025, o jogo da Team Cherry ultrapassou 7 milhões de cópias vendidas em pouco mais de três meses, tornando-se um dos maiores fenômenos indie.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>21 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2024/06/imagem_2024-06-25_124628538-1920x1080.png" class="card-img-top object-fit-cover" alt="Elden Ring" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Elden+Ring'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">RPG · Soulslike</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Nova Expansão de Elden Ring Bate Recordes</h5>
+                <p class="card-text small flex-grow-1 text-secondary">A FromSoftware anunciou que o novo capítulo ultrapassou marcas históricas com grande aclamação crítica e de público.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>20 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary border-opacity-50 h-100 text-light shadow-sm">
+              <div class="ratio ratio-16x9">
+                <img src="https://i.ytimg.com/vi/POz1-EmLsTY/maxresdefault.jpg" class="card-img-top object-fit-cover" alt="Resident Evil Requiem" onerror="this.src='https://via.placeholder.com/600x350/12122B/dc3545?text=Resident+Evil+Requiem'">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="small fw-bold text-uppercase mb-1 text-danger">Terror · Survival</span>
+                <h5 class="card-title h6 font-monospace fw-bold">Resident Evil: Requiem</h5>
+                <p class="card-text small flex-grow-1 text-secondary">Novo capítulo da franquia de survival horror da Capcom, com foco em investigação e atmosfera de terror mais denso.</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary mt-3">
+                  <span class="small text-secondary"><i class="bi bi-calendar3 me-1"></i>19 Jun 2026</span>
+                  <a href="#" class="btn btn-outline-danger btn-sm px-2 fw-bold">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="d-flex flex-column gap-4">
+
+          <div class="bg-black p-4 rounded border border-secondary">
+            <h3 class="h6 font-monospace text-uppercase text-danger mb-3 fw-bold">
+              <i class="bi bi-fire me-2"></i>Mais Lidas
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent text-light border-secondary px-0 py-2 d-flex align-items-center">
+                <span class="font-monospace fw-bold me-3 fs-5 text-danger">01</span>
+                <div>
+                  <p class="mb-0 small fw-bold">GTA 6 — Novidades</p>
+                  <span class="small text-secondary">Mundo Aberto · Ação</span>
+                </div>
+              </li>
+              <li class="list-group-item bg-transparent text-light border-secondary px-0 py-2 d-flex align-items-center">
+                <span class="font-monospace fw-bold me-3 fs-5 text-danger">02</span>
+                <div>
+                  <p class="mb-0 small fw-bold">Forza Horizon 6</p>
+                  <span class="small text-secondary">Corrida · Mundo Aberto</span>
+                </div>
+              </li>
+              <li class="list-group-item bg-transparent text-light border-secondary px-0 py-2 d-flex align-items-center">
+                <span class="font-monospace fw-bold me-3 fs-5 text-danger">03</span>
+                <div>
+                  <p class="mb-0 small fw-bold">DOOM The Dark Ages: Revelations</p>
+                  <span class="small text-secondary">FPS · Ação</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-black p-4 rounded border border-secondary">
+            <h3 class="h6 font-monospace text-uppercase text-danger mb-2 fw-bold">
+              <i class="bi bi-envelope me-2"></i>Newsletter
+            </h3>
+            <p class="small mb-3 text-secondary">
+              Receba o melhor do mundo dos games diretamente no seu e-mail.
+            </p>
+
+            <div class="mb-2">
+              <label class="form-label small text-uppercase fw-bold" for="sNome">Nome</label>
+              <input type="text" id="sNome" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+              <label class="form-label small text-uppercase fw-bold" for="sEmail">E-mail</label>
+              <input type="email" id="sEmail" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="seu@email.com">
+            </div>
+            <button class="btn btn-danger btn-sm w-100 fw-bold text-dark" onclick="sbmSide()">
+              <i class="bi bi-send-fill me-1"></i>Inscrever-se
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-center p-4 mt-5 border-top border-secondary">
+    <div class="container">
+      <p class="font-monospace fw-bold text-danger mb-2 fs-5">
+        NEXUS<span class="text-white">GAMES</span>
+      </p>
+      <p class="small mb-2 text-secondary">
+        O portal de referência para gamers brasileiros. Reviews honestos e notícias em primeira mão.
+      </p>
+      <div class="d-flex justify-content-center gap-3 my-3">
+        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-light fs-5"><i class="bi bi-twitch"></i></a>
+      </div>
+      <hr class="border-secondary opacity-25 mx-auto" style="max-width: 300px;">
+      <p class="small m-0 text-secondary">
+        © 2026 NexusGames. Todos os direitos reservados. Feito para gamers.
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="nlModal" tabindex="-1" aria-labelledby="nlModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark border-secondary text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-monospace fw-bold text-danger" id="nlModalLabel">
+            <i class="bi bi-envelope-fill me-2"></i>Assinar Newsletter
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small mb-3 text-secondary">
+            Junte-se a <strong class="text-danger">340.000 gamers</strong> que recebem novidades.
+          </p>
+
+          <div class="mb-3">
+            <label class="form-label small text-uppercase fw-bold" for="mNome">Nome completo</label>
+            <input type="text" id="mNome" class="form-control bg-black text-light border-secondary" placeholder="Ex: João Silva">
+          </div>
+          <div class="mb-3">
+            <label class="form-label small text-uppercase fw-bold" for="mEmail">E-mail</label>
+            <input type="email" id="mEmail" class="form-control bg-black text-light border-secondary" placeholder="joao@email.com">
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input border-secondary bg-dark" type="checkbox" id="mTermos">
+            <label class="form-check-label small" for="mTermos">
+              Concordo com os <a href="#" class="text-danger text-decoration-none">Termos de Uso</a>.
+            </label>
+          </div>
+          <button class="btn btn-danger w-100 fw-bold text-dark" onclick="sbmModal()">
+            <i class="bi bi-send-fill me-1"></i>Confirmar Inscrição
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable mt-5">
+      <div class="modal-content bg-black border border-danger text-light">
+        <div class="modal-body p-4">
+          <input id="srch-input" type="text" class="form-control form-control-lg bg-dark text-light border-secondary shadow-none mb-3" placeholder="Buscar jogos, reviews, notícias…" autocomplete="off" oninput="runSearch(this.value)">
+          <div id="srch-results" class="list-group d-none"></div>
+          <div class="mt-3 small text-center text-secondary">
+            <i class="bi bi-arrow-return-left me-1"></i>Enter para buscar &nbsp;·&nbsp;
+            <span class="text-danger fw-bold text-decoration-none" style="cursor:pointer;" data-bs-dismiss="modal">
+              ESC para fechar
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3 z-3" id="toastArea"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const ARTICLES = [
+      { tag: 'Ação · Mundo Aberto',     title: 'GTA 6: Rockstar Revela Novo Trailer Detalhando Vice City',  date: '26 Jun 2026' },
+      { tag: 'Corrida · Mundo Aberto',  title: 'Forza Horizon 6 — Japão Confirmado como Cenário',          date: '24 Jun 2026' },
+      { tag: 'FPS · Ação',              title: 'DOOM The Dark Ages: Revelations',                           date: '22 Jun 2026' },
+      { tag: 'Ficção Científica · RPG', title: 'Próximo Cyberpunk Entra em Produção Total',                 date: '22 Jun 2026' },
+      { tag: 'Indie · Metroidvania',    title: 'Hollow Knight: Silksong',                                   date: '21 Jun 2026' },
+      { tag: 'RPG · Soulslike',         title: 'Nova Expansão de Elden Ring Bate Recordes',                 date: '20 Jun 2026' },
+      { tag: 'Terror · Survival',       title: 'Resident Evil: Requiem',                                    date: '19 Jun 2026' },
+    ];
+
+    function showToast(title, message, icon = '🎮') {
+      const id  = 'toast-' + Date.now();
+      const html = `
+        <div id="${id}" class="toast bg-black border border-danger text-light" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="4500">
+          <div class="toast-header bg-danger text-dark font-monospace fw-bold border-0">
+            <span class="me-2">${icon}</span>
+            <strong class="me-auto">${title}</strong>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="toast" aria-label="Fechar"></button>
+          </div>
+          <div class="toast-body small">${message}</div>
+        </div>`;
+      document.getElementById('toastArea').insertAdjacentHTML('beforeend', html);
+      const el = document.getElementById(id);
+      new bootstrap.Toast(el).show();
+      el.addEventListener('hidden.bs.toast', () => el.remove());
+    }
+
+    function sbmSide() {
+      const n = document.getElementById('sNome').value.trim();
+      const e = document.getElementById('sEmail').value.trim();
+      if (!n || !e) {
+        showToast('Atenção', 'Preencha nome e e-mail para continuar.', '⚠️');
+        return;
+      }
+      showToast('Inscrição confirmada!', `Obrigado, <strong>${n}</strong>! Você receberá novidades em <em>${e}</em>.`, '✅');
+      document.getElementById('sNome').value  = '';
+      document.getElementById('sEmail').value = '';
+    }
+
+    function sbmModal() {
+      const n = document.getElementById('mNome').value.trim();
+      const e = document.getElementById('mEmail').value.trim();
+      if (!n || !e) {
+        showToast('Atenção', 'Preencha nome e e-mail para continuar.', '⚠️');
+        return;
+      }
+      if (!document.getElementById('mTermos').checked) {
+        showToast('Atenção', 'Aceite os Termos de Uso para confirmar a inscrição.', '⚠️');
+        return;
+      }
+      bootstrap.Modal.getInstance(document.getElementById('nlModal')).hide();
+      setTimeout(() => {
+        showToast('Bem-vindo, ' + n + '!', `Inscrição confirmada em: <em>${e}</em>`, '🎮');
+      }, 350);
+      document.getElementById('mNome').value    = '';
+      document.getElementById('mEmail').value   = '';
+      document.getElementById('mTermos').checked = false;
+    }
+
+    const srchInput   = document.getElementById('srch-input');
+    const srchResults = document.getElementById('srch-results');
+    const searchModal = document.getElementById('searchModal');
+
+    searchModal.addEventListener('shown.bs.modal', () => {
+      srchInput.focus();
+    });
+
+    searchModal.addEventListener('hidden.bs.modal', () => {
+      srchInput.value = '';
+      srchResults.classList.add('d-none');
+      srchResults.innerHTML = '';
+    });
+
+    function runSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (!q) { 
+        srchResults.classList.add('d-none'); 
+        return; 
+      }
+
+      const hits = ARTICLES.filter(a =>
+        a.title.toLowerCase().includes(q) ||
+        a.tag.toLowerCase().includes(q)
+      );
+
+      srchResults.innerHTML = hits.length
+        ? hits.map(a => `
+            <button type="button" class="list-group-item list-group-item-action bg-dark text-light border-secondary" data-bs-dismiss="modal">
+              <div class="small text-danger text-uppercase fw-bold mb-1" style="font-size: 0.7rem;">${a.tag}</div>
+              <div class="fw-bold">${highlight(a.title, q)}</div>
+            </button>`).join('')
+        : `<div class="p-3 text-center text-secondary border border-secondary rounded">
+             <i class="bi bi-search me-1"></i> Nenhum resultado para "<strong>${escapeHtml(query)}</strong>"
+           </div>`;
+
+      srchResults.classList.remove('d-none');
+    }
+
+    function highlight(text, q) {
+      const re = new RegExp(`(${escapeReg(q)})`, 'gi');
+      return text.replace(re, '<mark class="bg-danger text-dark rounded px-1 p-0">$1</mark>');
+    }
+
+    function escapeReg(s)  { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+    function escapeHtml(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  </script>
+</body>
+</html>
